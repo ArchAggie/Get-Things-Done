@@ -1,0 +1,133 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script defer src="index.js"></script>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="header-container">
+				<div class="name-container">
+					<span class="app-name">Get Things Done.</span>
+				</div>
+				<div class="list-name-container">
+					<span class="current-list-name">To-Do List</span>
+				</div>
+			</div>
+			<div class="todo-container">
+				<div class="task-container">
+					<div class="new-task-button-container">
+						<button
+							type="button"
+							class="new-button"
+							name="new-task"
+						>
+							New Task
+							<span class="plus"> +</span>
+						</button>
+					</div>
+					<ul class="task-item-container"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="popup-overlay">
+			<div id="popup-container">
+				<div class="add-close-box">
+					<img src="content/closeButton.png" />
+				</div>
+				<form class="add-task-form">
+					<label for="task-title">Task Name:</label>
+					<input
+						required
+						placeholder="Required"
+						type="text"
+						id="task-title"
+						name="task-title"
+					/>
+					<label for="task-description">Description:</label>
+					<textarea
+						rows="5"
+						maxlength="255"
+						name="task-description"
+						id="task-description"
+					></textarea>
+					<div class="radio-container">
+						<label for="task-priority">Priority:</label>
+						<input
+							type="radio"
+							name="option"
+							value="low"
+							checked="checked"
+						/>
+						<span class="radio-text">Low</span>
+						<input type="radio" name="option" value="medium" />
+						<span class="radio-text">Medium</span>
+						<input type="radio" name="option" value="high" />
+						<span class="radio-text">High</span>
+					</div>
+					<button type="submit" class="form-submit">
+						Add New Task
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="edit-popup-overlay">
+			<div id="edit-popup-container">
+				<div class="edit-close-box">
+					<img src="content/closeButton.png" />
+				</div>
+				<form class="edit-task-form">
+					<label for="task-title">Task Name:</label>
+					<input
+						required
+						placeholder="Required"
+						type="text"
+						id="edit-task-title"
+						name="task-title"
+					/>
+					<label for="task-description">Description:</label>
+					<textarea
+						rows="5"
+						maxlength="255"
+						name="task-description"
+						id="edit-task-description"
+					></textarea>
+					<div class="radio-container">
+						<label for="task-priority">Priority:</label>
+						<input
+							type="radio"
+							name="task-option"
+							value="low"
+							checked="checked"
+						/>
+						<span class="radio-text">Low</span>
+						<input type="radio" name="task-option" value="medium" />
+						<span class="radio-text">Medium</span>
+						<input type="radio" name="task-option" value="high" />
+						<span class="radio-text">High</span>
+						<input
+							type="radio"
+							name="task-option"
+							style="visibility: hidden"
+							value="complete"
+							checked="true"
+						/>
+					</div>
+					<button type="submit" class="form-submit">Edit Task</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

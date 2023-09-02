@@ -1,0 +1,19 @@
+{
+	"name": "Get Things Done",
+	"version": "1.0.0",
+	"description": "To Do List Web App",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"json-server": "json-server --watch db.json",
+		"start-server": "concurrently \"npm run start\" \"npm run json-server\""
+	},
+	"author": "Brian Parsons, Jake Wesolowski",
+	"license": "ISC",
+	"dependencies": {
+		"json-server": "^0.17.3"
+	},
+	"devDependencies": {
+		"concurrently": "^8.0.1"
+	}
+}

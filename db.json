@@ -1,0 +1,60 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Create a unicorn costume for the school play",
+      "description": "Dane needs to use their creative skills to make a unicorn costume for the school play. They need to gather materials and design the costume to fit the play's theme.",
+      "currentPriority": "high",
+      "previousPriority": "complete"
+    },
+    {
+      "id": 2,
+      "title": "Learn how to juggle 5 balls",
+      "description": "Dane wants to learn how to juggle 5 balls to impress their students. They need to find a tutorial and practice daily until they can juggle 5 balls flawlessly.",
+      "currentPriority": "complete",
+      "previousPriority": "high"
+    },
+    {
+      "id": 3,
+      "title": "Write a rap song about math",
+      "description": "Dane needs to write a rap song that teaches students about math concepts. They need to research different math topics and create a catchy tune that students will enjoy and learn from.",
+      "currentPriority": "medium",
+      "previousPriority": "complete"
+    },
+    {
+      "id": 4,
+      "title": "Plan a surprise birthday party for Brian",
+      "description": "Dane wants to plan a surprise birthday party for his best student. They need to coordinate with the student's parents, grandparents, cousins, uncles and ghostly ancestors, gather decorations and party supplies, and plan fun activities for the party.",
+      "currentPriority": "low",
+      "previousPriority": "complete"
+    },
+    {
+      "id": 5,
+      "title": "Paint a mural of famous scientists in the classroom",
+      "description": "Dane needs to paint a mural of famous scientists in the classroom to inspire their students. They need to gather reference images and sketch out a design before painting the mural on the wall.",
+      "currentPriority": "low",
+      "previousPriority": "complete"
+    },
+    {
+      "id": 6,
+      "title": "Learn how to play the didgeridoo",
+      "description": "Dane has always been fascinated with the didgeridoo and wants to learn how to play it. They need to find a tutorial, purchase a didgeridoo, and practice daily to master the instrument.",
+      "currentPriority": "complete",
+      "previousPriority": "high"
+    },
+    {
+      "id": 7,
+      "title": "Organize a field trip to a goat farm",
+      "description": "Dane wants to organize a field trip to a goat farm to teach their students about animal husbandry. They need to coordinate with the farm owners, arrange transportation, and plan fun and educational activities for the field trip.",
+      "currentPriority": "complete",
+      "previousPriority": "high"
+    },
+    {
+      "id": 8,
+      "title": "Build a Rube Goldberg machine",
+      "description": "Dane wants to build a Rube Goldberg machine to demonstrate cause and effect to their students. They need to gather materials, design the machine, and test it to make sure it works correctly.",
+      "currentPriority": "medium",
+      "previousPriority": "complete"
+    }
+  ]
+}

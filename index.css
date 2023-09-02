@@ -1,0 +1,398 @@
+body {
+	color: #8a8b8e;
+	background-color: #cac6cd;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+textarea {
+	font-family: Roboto, sans-serif;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	min-height: 350px;
+	border-radius: 15px;
+	filter: drop-shadow(-13.121px 15.094px 12.5px rgba(0, 0, 0, 0.26));
+	background-image: linear-gradient(180deg, #f0f3f4 0%, #d3dae1 100%);
+	padding: 24px;
+	padding-top: 18px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-bottom: 1rem;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.app-name {
+	user-select: none;
+	font-size: 24px;
+	font-weight: 200;
+}
+
+.todo-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.list-container {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+}
+
+.list-item-container {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+}
+
+.task-item-container {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+}
+
+.list-name {
+	align-self: center;
+	font-size: 14px;
+	font-weight: 400;
+	user-select: none;
+	cursor: pointer;
+}
+
+.list-name-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.list-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.task-container {
+	display: flex;
+	flex-direction: column;
+	/* change to 65 if add lists */
+	width: 100%;
+}
+
+.horizontal-divider {
+	margin: 0.25rem 0rem 0.25rem 3rem;
+	opacity: 0.3;
+}
+
+.vertical-divider {
+	opacity: 0.3;
+}
+
+button[name="new-list"],
+button[name="new-task"] {
+	background: none;
+	border: 0;
+	width: 120px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+	color: #afafaf;
+	font-size: 18px;
+}
+
+button[name="new-task"] {
+	width: 100px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 200;
+	color: #afafaf;
+	font-size: 18px;
+	padding: 0;
+}
+
+.new-button {
+	cursor: pointer;
+	user-select: none;
+}
+
+.new-list-button-container,
+.new-task-button-container {
+	display: flex;
+	justify-content: right;
+}
+
+.plus {
+	font-size: 20px;
+}
+
+.list-card {
+	display: flex;
+	align-items: center;
+}
+
+.list-symbol {
+	margin-right: 1.25rem;
+	height: 32px;
+}
+
+.task-card {
+	border-radius: 11px;
+	padding: 8px 8px 12px 10px;
+	margin-bottom: 0.75rem;
+	filter: drop-shadow(-3px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+.task-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.task-header {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	color: #6a6667;
+	margin-bottom: 0.25rem;
+}
+
+.title {
+	font-weight: 500;
+}
+
+.task-description {
+	color: #6a6667;
+	font-size: 14px;
+}
+.task-information {
+	width: 100%;
+}
+
+.edit-container {
+	display: none;
+	height: 16px;
+	margin-left: auto;
+}
+
+.task-card:hover .edit-container {
+	display: flex;
+}
+
+.current-list-name {
+	text-align: right;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.icon-button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	padding-left: 0;
+}
+
+.icon-button img {
+	height: 15px;
+}
+
+#checkbox-button:hover img {
+	content: url("content/checkedBox.png");
+	filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+#checkbox-button:focus img {
+	content: url("content/completed.png");
+	filter: drop-shadow(1px 1px 2px rgba(0, 00, 00, 0.5));
+}
+
+.red {
+	background-image: linear-gradient(180deg, #faddbe 0%, #f6aeaa 100%);
+}
+
+.yellow {
+	background-image: linear-gradient(180deg, #f8e9c2 0%, #f2cd8e 100%);
+}
+
+.blue {
+	background-image: linear-gradient(180deg, #a4e7db 0%, #6ee3db 100%);
+}
+
+.purple {
+	background-image: linear-gradient(180deg, #d7d2f4 0%, #9aaaee 100%);
+}
+
+.complete {
+	position: relative;
+	background-image: linear-gradient(180deg, #cecdd2 0%, #616171 100%);
+}
+
+.complete div {
+	color: #ebe6e6;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.complete .title {
+	text-decoration: line-through;
+}
+
+.popup-overlay,
+.edit-popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	visibility: hidden;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.show {
+	visibility: visible;
+	animation: fadeIn 1s;
+}
+
+.hide {
+	visibility: hidden;
+	animation: fadeIn 1s;
+}
+
+#popup-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(180deg, #f0f3f4 0%, #d3dae1 100%);
+	padding: 16px;
+	border-radius: 9px;
+}
+
+#popup-container h2 {
+	margin-top: 0;
+}
+
+#popup-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+#popup-container input[type="text"],
+#task-description {
+	padding: 5px;
+	border-radius: 4px;
+	border-width: 1px;
+	background: none;
+	width: 20rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+#task-description {
+	resize: none;
+}
+
+#popup-container button[type="submit"] {
+	background-image: linear-gradient(180deg, #9bce6b 0%, #257538 100%);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.2));
+
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.radio-container {
+	margin-bottom: 1rem;
+}
+
+#edit-popup-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(180deg, #f0f3f4 0%, #d3dae1 100%);
+	padding: 16px;
+	border-radius: 9px;
+}
+
+#edit-popup-container h2 {
+	margin-top: 0;
+}
+
+#edit-popup-container form {
+	display: flex;
+	flex-direction: column;
+}
+
+#edit-popup-container input[type="text"],
+#edit-task-description {
+	padding: 5px;
+	border-radius: 4px;
+	border-width: 1px;
+	background: none;
+	width: 20rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+#task-description,
+#edit-task-description {
+	resize: none;
+}
+
+#edit-popup-container button[type="submit"] {
+	background-image: linear-gradient(180deg, #9bce6b 0%, #257538 100%);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	filter: drop-shadow(-2px 2px 3px rgba(0, 0, 0, 0.2));
+
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.edit-close-box,
+.edit-close-box img,
+.add-close-box,
+.add-close-box img {
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+}
+
+.edit-close-box,
+.add-close-box {
+	position: absolute;
+	right: 0.9rem;
+	top: 0.9rem;
+}
+
+#task-title::placeholder,
+#edit-task-title::placeholder {
+	font-style: italic;
+}
